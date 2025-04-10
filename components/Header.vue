@@ -1,13 +1,8 @@
 <template>
-  <q-toolbar class="q-px-md q-py-sm">
-    <q-btn flat round dense icon="menu" @click="$emit('toggle-drawer')" class="q-mr-sm" />
-
-    <q-toolbar-title class="text-h6">Elev8</q-toolbar-title>
-
-    <q-space />
-
-    <!-- Avatar & Language Icon -->
-    <q-btn flat round icon="translate" />
+  <q-toolbar class="q-px-md q-py-sm justify-end q-gutter-md">
+    <q-icon name="chat_bubble_outline" size="20px" />
+    <q-icon name="chat_bubble_outline" />
+    <q-icon name="chat_bubble_outline" />
     <q-avatar size="32px">
       <img src="https://randomuser.me/api/portraits/men/1.jpg" />
     </q-avatar>
