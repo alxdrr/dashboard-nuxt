@@ -249,7 +249,6 @@ import { ref } from "vue";
 import { Search, MessageCircle, ShoppingCart, ChevronLeft, ChevronRight, EllipsisVertical, Calendar, MapPin, Copy, Sparkles } from "lucide-vue-next";
 import Button from "../components/ui/Button.vue";
 import Card from "../components/ui/Card.vue";
-import Pagination from "../components/ui/Pagination.vue";
 import Offcanvas from "../components/ui/Offcanvas.vue";
 
 const showDetail = ref(false);

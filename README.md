@@ -1,75 +1,36 @@
-# Nuxt Minimal Starter
+# Nuxt Dashboard Project
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a modern admin dashboard built with [Nuxt 3](https://nuxt.com/), using [Tailwind CSS](https://tailwindcss.com/) for styling and [Quasar](https://quasar.dev/) for selected UI components.
 
-## Setup
+## 🔧 Features
 
-Make sure to install dependencies:
+- ⚡ Fast development powered by Nuxt 3 & Vite
+- 🎨 Fully styled with Tailwind CSS (with utility prefix: `tw:`)
+- 🧩 Optional use of Quasar UI components (e.g., Offcanvas)
+- 💻 TypeScript support
+- 🔁 Dynamic routing
+- 🌙 Dark mode-ready
+- 🔐 Ready for integration with authentication & APIs
+
+## 📦 Tech Stack
+
+- **Framework**: Nuxt 3 (Vue 3, Composition API, SSR)
+- **Styling**: Tailwind CSS (with `tw:` prefix), Custom override styles
+- **UI Components**: Quasar (used selectively)
+- **Icons**: [Lucide](https://lucide.dev/) icons
+
+## 🛠️ Project Setup
 
 ```bash
-# npm
+# install dependencies
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# start development server
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
+# build for production
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
+# preview production build
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
