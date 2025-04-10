@@ -1,10 +1,14 @@
+<script setup>
+import { Bell, MessageSquare, Menu } from "lucide-vue-next";
+import avatar from "../assets/avatar.png";
+</script>
 <template>
-  <q-toolbar class="q-px-md q-py-sm justify-end q-gutter-md">
-    <q-icon name="chat_bubble_outline" size="20px" />
-    <q-icon name="chat_bubble_outline" />
-    <q-icon name="chat_bubble_outline" />
-    <q-avatar size="32px">
-      <img src="https://randomuser.me/api/portraits/men/1.jpg" />
-    </q-avatar>
-  </q-toolbar>
+  <header class="tw:h-16 tw:bg-white tw:flex tw:justify-between tw:items-center tw:px-6 tw:fixed tw:left-64 tw:right-0 tw:top-0 tw:z-10">
+    <Menu />
+    <div class="tw:flex tw:items-center tw:gap-4">
+      <Bell />
+      <MessageSquare />
+      <img :src="avatar" alt="" class="tw:rounded-full tw:h-10" />
+    </div>
+  </header>
 </template>
