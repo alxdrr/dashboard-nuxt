@@ -82,16 +82,16 @@
       <Offcanvas :show="showChat" @close="showChat = false">
         <div class="tw:h-full tw:p-4 tw:space-y-4 tw:flex tw:flex-col">
           <div class="tw:relative">
-            <button @click="showChat = false" class="tw:absolute -tw:left-6 tw:text-gray-500 tw:hover:text-black tw:text-xl">&times;</button>
+            <button @click="showChat = false" class="tw:absolute tw:-left-6 tw:text-gray-500 tw:hover:text-black tw:text-xl">&times;</button>
             <div>
               <h2 class="tw:text-lg tw:font-semibold">Chat with Us</h2>
             </div>
           </div>
 
           <div class="tw:rounded-lg tw:p-4 tw:space-y-2 tw:bg-gr tw:ay-50">
-            <h3 class="tw:text-md tw:font-semibold">
+            <p class="tw:text-md tw:font-semibold">
               {{ selectedChat?.name }} <span class="tw:text-gray-400">+{{ selectedChat?.guestCount - 1 }} Guests</span>
-            </h3>
+            </p>
             <p class="tw:text-sm tw:flex tw:items-center tw:gap-1">
               <Calendar size="14" />
               {{ selectedChat?.checkIn }} - {{ selectedChat?.checkOut }}
@@ -260,6 +260,7 @@ import { ref } from "vue";
 import { Search, MessageCircle, ShoppingCart, ChevronLeft, ChevronRight, EllipsisVertical, Calendar, MapPin, Copy, Sparkles } from "lucide-vue-next";
 import Button from "../components/ui/Button.vue";
 import Card from "../components/ui/Card.vue";
+import Offcanvas from "../components/ui/Offcanvas.vue";
 
 const showDetail = ref(false);
 const selectedReservation = ref(null);
