@@ -239,16 +239,10 @@
 
       <div class="tw:flex tw:items-center tw:justify-between tw:text-sm tw:text-gray-500 tw:px-4 tw:py-3">
         <span>Showing 10 of 110 Results</span>
-        <div class="tw:flex tw:items-center tw:gap-2">
-          <ChevronLeft class="tw:w-4 tw:h-4" />
-          <div class="tw:flex tw:gap-1">
-            <button class="tw:px-2 tw:py-1 tw:rounded tw:bg-yellow-400 tw:text-white">1</button>
-            <button class="tw:px-2 tw:py-1">2</button>
-            <button class="tw:px-2 tw:py-1">3</button>
-            <span class="tw:px-2 tw:py-1">...</span>
-            <button class="tw:px-2 tw:py-1">10</button>
+        <div class="q-pa-lg">
+          <div class="q-gutter-md">
+            <q-pagination v-model="current" max="10" :max-pages="6" direction-links color="black" active-design="tw:red-500" active-color="primary" active-text-color="black" />
           </div>
-          <ChevronRight class="tw:w-4 tw:h-4" />
         </div>
       </div>
     </Card>
@@ -260,6 +254,7 @@ import { ref } from "vue";
 import { Search, MessageCircle, ShoppingCart, ChevronLeft, ChevronRight, EllipsisVertical, Calendar, MapPin, Copy, Sparkles } from "lucide-vue-next";
 import Button from "../components/ui/Button.vue";
 import Card from "../components/ui/Card.vue";
+import Pagination from "../components/ui/Pagination.vue";
 import Offcanvas from "../components/ui/Offcanvas.vue";
 
 const showDetail = ref(false);
@@ -279,7 +274,7 @@ function openChat(guest) {
 }
 const tabs = ["Ongoing", "Previous", "Cancelled"];
 const activeTab = ref("Ongoing");
-
+const current = ref(3);
 const reservations = ref([
   {
     name: "Oliver Bennett",

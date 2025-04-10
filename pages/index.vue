@@ -387,14 +387,10 @@
 
       <div class="tw:flex tw:justify-between tw:items-center tw:text-xs tw:text-gray-400 tw:mt-4 tw:px-2">
         <span>Showing 5 of 25 Results</span>
-        <div class="tw:flex tw:items-center tw:gap-2">
-          <button class="tw:p-1 tw:hover:text-black">&lt;</button>
-          <button class="tw:bg-yellow-400 tw:text-white tw:px-2 tw:py-1 tw:rounded">1</button>
-          <button class="tw:hover:text-black">2</button>
-          <button class="tw:hover:text-black">3</button>
-          <span>...</span>
-          <button class="tw:hover:text-black">10</button>
-          <button class="tw:p-1 tw:hover:text-black">&gt;</button>
+        <div class="q-pa-lg">
+          <div class="q-gutter-md">
+            <q-pagination v-model="current" max="10" :max-pages="4" direction-links color="black" active-color="primary" active-text-color="black" />
+          </div>
         </div>
       </div>
     </Card>
@@ -405,4 +401,5 @@ import Card from "../components/ui/Card.vue";
 import RadialStat from "../components/charts/RadialStat.vue";
 import SplineArea from "../components/charts/SplineArea.vue";
 import { TrendingUp, House, Users, CirclePlus, CircleMinus, ZoomIn, EllipsisVertical, Eye, Pencil, Trash } from "lucide-vue-next";
+const current = ref(3);
 </script>
