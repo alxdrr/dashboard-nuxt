@@ -104,13 +104,8 @@
 
           <!-- Chat messages -->
           <div class="tw:space-y-3 tw:flex tw:flex-col tw:h-full">
-            <div class="tw:bg-yellow-300 tw:text-sm tw:text-black tw:max-w-2/3 tw:p-3 tw:rounded-lg tw:rounded-tr-none tw:self-end">
-              Good afternoon Juliantara!, Front office here, is there anything we can do to help you?
-            </div>
-            <div class="tw:bg-gray-200 tw:text-sm tw:text-black tw:max-w-2/3 tw:p-3 tw:rounded-lg tw:rounded-tl-none tw:w-fit">Yes, where’s the key?</div>
-            <div class="tw:bg-yellow-300 tw:text-sm tw:text-black tw:max-w-2/3 tw:p-3 tw:rounded-lg tw:rounded-tr-none tw:w-fit tw:self-end">
-              Good afternoon! If you're looking for the property key, please head over to the front desk, and we'll be happy to assist you.
-            </div>
+            <q-chat-message bg-color="primary" :text="['hey, how are you?']" sent />
+            <q-chat-message bg-color="grey-4" :text="['doing fine, how r you?']" />
           </div>
 
           <!-- Input -->

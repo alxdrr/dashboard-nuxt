@@ -23,8 +23,8 @@ import avatar from "../assets/avatar.png";
             <p>Chat</p>
             <hr class="tw:w-full tw:border-neutral-300" />
             <div style="width: 100%; max-width: 400px">
-              <q-chat-message :text="['hey, how are you?']" sent />
-              <q-chat-message :text="['doing fine, how r you?']" />
+              <q-chat-message bg-color="primary" :text="['hey, how are you?']" sent />
+              <q-chat-message bg-color="grey-4" :text="['doing fine, how r you?']" />
             </div>
           </div>
         </q-menu>
