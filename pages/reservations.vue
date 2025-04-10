@@ -18,7 +18,7 @@
         <div class="tw:flex tw:justify-between tw:items-center tw:gap-4">
           <div class="tw:relative tw:w-64">
             <input type="text" placeholder="Search" class="tw:w-full tw:pl-4 tw:pr-4 tw:py-2 tw:bg-neutral-50 tw:rounded-md tw:text-sm" />
-            <Search class="tw:absolute tw:right-4 tw:top-2.tw:5 tw:w-4 tw:h-4 tw:text-gray-400" />
+            <Search class="tw:absolute tw:right-4 tw:top-2.5 tw:w-4 tw:h-4 tw:text-gray-400" />
           </div>
           <Button variant="outline" class="tw:text-sm">Export CSV</Button>
         </div>

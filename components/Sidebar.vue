@@ -10,19 +10,19 @@
 
     <nav class="tw:space-y-2 tw:text-sm">
       <div class="tw:font-bold tw:text-xl">Main</div>
-      <NuxtLink to="/" class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded" :class="{ 'tw:bg-yellow-400': $route.path === '/' }">
+      <NuxtLink to="/" class="tw:hover:bg-neutral-200 tw:bg-white tw:transition-all tw:duration-200 tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded" :class="{ 'tw:bg-yellow-400 tw:hover:bg-yellow-400': $route.path === '/' }">
         <LayoutGrid />
         <p class="tw:font-semibold tw:m-0">Dashboard</p>
       </NuxtLink>
-      <NuxtLink to="/reservations" class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded" :class="{ 'tw:bg-yellow-400': $route.path === '/reservations' }">
+      <NuxtLink to="/reservations" class="tw:hover:bg-neutral-200 tw:bg-white tw:transition-all tw:duration-200 tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded" :class="{ 'tw:bg-yellow-400 tw:hover:bg-yellow-400': $route.path === '/reservations' }">
         <Calendar />
         <p class="tw:font-semibold tw:m-0">Reservations</p>
       </NuxtLink>
-      <div class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded">
+      <NuxtLink to="/listing" class="tw:hover:bg-neutral-200 tw:bg-white tw:transition-all tw:duration-200 tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded" :class="{ 'tw:bg-yellow-400 tw:hover:bg-yellow-400': $route.path === '/listing' }">
         <House />
         <p class="tw:font-semibold tw:m-0">Listings</p>
-      </div>
-      <q-expansion-item header-class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded">
+      </NuxtLink>
+      <q-expansion-item header-class="tw:hover:bg-neutral-200 tw:bg-white tw:transition-all tw:duration-200 tw:flex tw:items-center tw:px-3 tw:py-2 tw:rounded tw:min-h-0">
         <!-- Header custom pakai slot -->
         <template #header>
           <div class="tw:flex tw:items-center tw:gap-2 tw:w-full">
@@ -36,7 +36,7 @@
           <p class="tw:font-semibold tw:m-0 tw:ms-4">Ongoing</p>
         </div>
       </q-expansion-item>
-      <q-expansion-item header-class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded">
+      <q-expansion-item header-class="tw:hover:bg-neutral-200 tw:bg-white tw:transition-all tw:duration-200 tw:flex tw:items-center tw:px-3 tw:py-2 tw:rounded tw:min-h-0">
         <!-- Header custom pakai slot -->
         <template #header>
           <div class="tw:flex tw:items-center tw:gap-2 tw:w-full">
@@ -54,22 +54,32 @@
 
     <nav class="tw:space-y-2 tw:text-sm">
       <div class="tw:font-bold tw:text-xl">Extras</div>
-      <div class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded">
+      <NuxtLink to="/task" class="tw:hover:bg-neutral-200 tw:bg-white tw:transition-all tw:duration-200 tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded" :class="{ 'tw:bg-yellow-400 tw:hover:bg-yellow-400': $route.path === '/task' }">
         <FileCheck2 />
-        <p class="tw:font-semibold tw:m-0">Listings</p>
-      </div>
-      <div class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded">
+        <p class="tw:font-semibold tw:m-0">Task</p>
+      </NuxtLink>
+      <NuxtLink to="/order" class="tw:hover:bg-neutral-200 tw:bg-white tw:transition-all tw:duration-200 tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded" :class="{ 'tw:bg-yellow-400 tw:hover:bg-yellow-400': $route.path === '/order' }"">
         <Check />
         <p class="tw:font-semibold tw:m-0">Orders</p>
-      </div>
-      <div class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded">
+      </NuxtLink>
+      <NuxtLink to="/user" class="tw:hover:bg-neutral-200 tw:bg-white tw:transition-all tw:duration-200 tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded" :class="{ 'tw:bg-yellow-400 tw:hover:bg-yellow-400': $route.path === '/user' }"">
         <UserPlus />
-        <p class="tw:font-semibold tw:m-0">Upsells</p>
-      </div>
-      <div class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded">
-        <Settings />
-        <p class="tw:font-semibold tw:m-0">Upsells</p>
-      </div>
+        <p class="tw:font-semibold tw:m-0">Users</p>
+      </NuxtLink>
+      <q-expansion-item header-class="tw:hover:bg-neutral-200 tw:bg-white tw:transition-all tw:duration-200 tw:flex tw:items-center tw:px-3 tw:py-2 tw:rounded tw:min-h-0">
+        <!-- Header custom pakai slot -->
+        <template #header>
+          <div class="tw:flex tw:items-center tw:gap-2 tw:w-full">
+            <Settings />
+            <p class="tw:font-semibold tw:m-0">Settings</p>
+          </div>
+        </template>
+
+        <!-- Content -->
+        <div class="tw:flex tw:items-center tw:gap-2 tw:px-3 tw:py-2 tw:rounded">
+          <p class="tw:font-semibold tw:m-0 tw:ms-4">Ongoing</p>
+        </div>
+      </q-expansion-item>
     </nav>
   </aside>
 </template>
